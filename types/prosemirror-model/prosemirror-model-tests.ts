@@ -89,7 +89,7 @@ const res3_1 = new model.ResolvedPos();
 const res3_2: model.Mark[] = res3_1.marksAcross(res3_1)!;
 const res3_3: model.NodeRange = res3_1.blockRange(res3_1)!;
 
-const res4_1 = new model.NodeType();
+const res4_1 = new model.NodeType('foo', {} as model.Schema, nodeSpec);
 const res4_2: model.Node = res4_1.createAndFill()!;
 
 const res5_1 = new model.MarkType();

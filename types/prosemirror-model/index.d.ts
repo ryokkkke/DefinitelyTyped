@@ -987,6 +987,7 @@ export class NodeRange<S extends Schema = any> {
  * represents.
  */
 export class NodeType<S extends Schema = any> {
+    constructor(name: string, schema: S, spec: NodeSpec);
     /**
      * The name the node type has in this schema.
      */
